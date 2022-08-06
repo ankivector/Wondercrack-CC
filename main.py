@@ -24,8 +24,8 @@ bot = Client(
     parse_mode="html")
 
 
-try:
-    bot.run()
-except Exception as e:
-    print(e)
+#try:
+bot.run()
+#except Exception as e:
+#    print(e)
         
