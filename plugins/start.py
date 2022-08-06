@@ -28,7 +28,7 @@ REPLY_MARKUP  = InlineKeyboardMarkup([
 ])
 @Client.on_message(filters.command(['start', f'start@{BOT_USERNAME}'],prefixes=['.','/','!'],case_sensitive=False) & filters.text)
 async def start(Client, message):
-    await Client.send_chat_action(message.chat.id, "typing")
+    #await Client.send_chat_action(message.chat.id, "typing")
     if message.reply_to_message is not None:
         message.text = message.reply_to_message.text
     dt_string = datetime.now().strftime(" %B %Y And Time Is %H-%M %p")
