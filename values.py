@@ -47,7 +47,7 @@ mongourl = "mongodb+srv://ccbotnew:ccbotnew@cluster0.4w8nx56.mongodb.net/?retryW
 client = pymongo.MongoClient(mongourl,serverSelectionTimeoutMS=5000)
 maindb = client.bot['main']
 
-antidb = redis.Redis(host='redis-11466.c261.us-east-1-4.ec2.cloud.redislabs.com', port=11466, password='6Dnav9mxLnYPgS9MZKJBSGmrtLThctI0')
+antidb = redis.Redis(host='redis-19586.c8.us-east-1-3.ec2.cloud.redislabs.com', port=19586, password='0X5jhnUxnvhQp0RPyPdrZAP9K4opF7Jf')
 
 BOT_USERNAME = 'LKTechNewsBot'
 loggp = -1001456270046
