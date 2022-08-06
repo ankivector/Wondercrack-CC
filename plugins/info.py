@@ -49,7 +49,7 @@ async def info(Client, message):
                     text = """<b>Register First Hit /takeme </b>"""
                     await msg.edit_text(text)
                 else:
-                    antispam_time = int(antidb.get(str(message.from_user.id)).decode("utf-8"))
+                    antispam_time = antidb.get(message.from_user.id).decode("utf-8")
                     text = f"""
 <b>〄</b> User Information:-
 <b>○</b> First Name: <b>{message.from_user.first_name}</b>
